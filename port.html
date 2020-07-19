@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Port</title>
+	<link rel="stylesheet" type="text/css" href="port.css">
+</head>
+<body bgcolor="#111">
+
+<div class="topnav" id="myTopnav">
+  <a href="port.html" class="active">Home</a>
+  <a href="#">Avisos</a>
+  <a href="#">Novidades</a>
+  <div class="dropdown">
+    <button class="dropbtn">Categorias 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Imagens</a>
+      <a href="#">Música</a>
+      <a href="video.html">Vídeos</a>
+    </div>
+  </div> 
+  <a href="#" class="right">Perfil</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="natureza4.jpg">
+  <div class="text">Imagem Um</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="natureza2.jpg">
+  <div class="text">Imagem Dois</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="natureza6.jpg">
+  <div class="text">Imagem Três</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");      
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+<section>
+<div class="principal">
+	<div class="principal2">
+	  <h3>Uma Beleza Natural</h3>  
+		<p>No mundo, existe incontavéis lugares, que possuem uma grande beleza natural. E um dos lugares mais bonitos, sem dúvidas são as praias.</p>
+		<p>As praias, é um lugar que as pessoas, costumam frequentar de vez em quando, para se divertirem. Essa frequência, costuma ser mais forte no verão.</p>
+		<p>Os meios de diversão na praia, são: Jogar futebol de areia, Jogar volêi, Nadar no mar e jogar água em todo mundo.</p>
+	</div>
+</div>
+</section>
+<section class="container">
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="beach-sunset.jpg">
+      <a href="#"><h4>Beach Sunset</h4></a>
+      <p>Pôr do sol na praia.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="beach-sunset-thailand.jpg">
+      <a href="#"><h4>Beach in Thailand</h4></a>
+      <p>Praia na Tailândia.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="beautiful-beach-in-portugal.jpg">
+      <a href="#"><h4>Beach in Portugal</h4></a>
+      <p>Praia em Portugal.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="praia-da-bombaca.jpg">
+      <a href="praia_quatro.html" target="_blank"><h4>Praia da Bombaça</h4></a>
+      <p>Praia bonita.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="praia-de-indaiauba-ilhabela.jpg">
+      <a href="#"><h4>Praia de Indaiauba</h4></a>
+      <p>Linda praia.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="praia-do-sono-capa.jpg">
+      <a href="praia_seis.html" target="_blank"><h4>Praia do Sono</h4></a>
+      <p>Praia legal.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="praia-toninhas-ubatuba.jpg">
+      <a href="#"><h4>Praia Toninhas</h4></a>
+      <p>Maravilhosa praia.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="thailand-beach.jpg">
+      <a href="#"><h4>Thailand Beach</h4></a>
+      <p>Outra na tailândia.</p>
+    </div>
+  </div>
+</div>
+</section>
+<footer>
+	<p>Desenvolvido por João Matheus</p>
+</footer>
+
+</body>
+</html>

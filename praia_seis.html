@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Praia do Sono</title>
+	<link rel="stylesheet" type="text/css" href="praias.css">
+</head>
+<body background="thick-lush-green-forest.jpg">
+
+<div class="topnav" id="myTopnav">
+  <a href="port.html" class="active">Home</a>
+  <a href="#">Avisos</a>
+  <a href="#">Novidades</a>
+  <div class="dropdown">
+    <button class="dropbtn">Categorias 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Imagens</a>
+      <a href="#">Música</a>
+      <a href="video.html" target="_blank">Vídeos</a>
+    </div>
+  </div> 
+  <a href="#" class="right">Perfil</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+ <div class="container">
+<div class="prin">
+	<img src="praia-do-sono-capa.jpg">
+  <p class="text1">A Praia do Sono é um verdadeiro paraíso localizado na região da Costa Verde do Rio de Janeiro. Fica perto de Paraty, em uma região de natureza abundante.</p>
+
+<p class="text2">Praias, cachoeiras, trilhas e um céu super estrelado é só um pouco do que você encontra por lá. A vibe da praia é sem igual. Não tem jeito: quem vai, não quer ir embora e sempre dá um jeitinho de voltar!</p>
+
+<a href="port.html" class="btn2">Voltar</a>
+</div>
+ </div>
+
+</body>
+</html>

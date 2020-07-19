@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Videos</title>
+	<link rel="stylesheet" type="text/css" href="video.css">
+</head>
+<body bgcolor="#111">
+
+<div class="topnav" id="myTopnav">
+  <a href="port.html" class="active">Home</a>
+  <a href="#">Avisos</a>
+  <a href="#">Novidades</a>
+  <div class="dropdown">
+    <button class="dropbtn">Categorias 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Imagens</a>
+      <a href="#">Música</a>
+      <a href="video.html">Vídeos</a>
+    </div>
+  </div> 
+  <a href="#" class="right">Perfil</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  <section>
+ <div class="container">
+<div class="prin">
+  <h2>Veja um Vídeo:</h2>
+  <p>Este vídeo é bem informativo. Trata-se do mal em que o lixo, faz aos animais marinhos.</p>
+  <iframe src="Vídeo M.mp4"></iframe>
+</div>
+ </div>
+  </section>
+
+</body>
+</html>
